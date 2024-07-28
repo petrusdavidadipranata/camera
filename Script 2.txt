@@ -1,0 +1,9 @@
+Buka lagi Notepad baru lalu Copas Script berikut
+Bagian "PDFBanyak.js" ganti dan sesuaikan dengan nama file .js awal
+Simpan dengan ekstensi .bat (misalkan "KlikSekali.bat")
+Taruh di Folder file Word
+=================================================
+
+echo off
+for %%X in (*.docx) do cscript.exe //nologo PDFBanyak.js "%%X"
+for %%X in (*.doc) do cscript.exe //nologo PDFBanyak.js "%%X"
